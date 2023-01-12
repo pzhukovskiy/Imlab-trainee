@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.app {
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+}
+
+.app > input {
+    margin-left: 10px;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.btn > button {
+    margin-left: 10px;
+}
+
+.answer {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.answer > #res {
+    display: flex;
+    padding-top: 17px;
+    padding-left: 15px;
+}
+
+.answer > #choice {
+    display: flex;
+    padding-top: 17px;
+    padding-left: 15px;
+}
