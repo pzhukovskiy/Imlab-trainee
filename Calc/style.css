@@ -1,4 +1,4 @@
-body {
+* {
     margin: 0;
     padding: 0;
 }
@@ -6,37 +6,38 @@ body {
 .app {
     display: flex;
     justify-content: center;
-    padding-top: 100px;
+    align-items: center;
 }
 
 .app > input {
-    margin-left: 10px;
+    display: flex;
+    margin-left: 50px;
 }
 
-.btn {
+.app .inp1 {
+    display: flex;
+    margin-top: 50px;
+}
+
+.app .inp2 {
+    display: flex;
+    margin-top: 50px;
+}
+
+.inp {
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+
+.inp > #input0 {
+    display: flex;
     padding-top: 20px;
+    margin-left: 50px;
 }
 
-.btn > button {
-    margin-left: 10px;
-}
-
-.answer {
+.inp > #inputt0 {
     display: flex;
-    justify-content: center;
     padding-top: 20px;
-}
-
-.answer > #res {
-    display: flex;
-    padding-top: 17px;
-    padding-left: 15px;
-}
-
-.answer > #choice {
-    display: flex;
-    padding-top: 17px;
-    padding-left: 15px;
+    margin-left: 50px;
 }

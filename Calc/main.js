@@ -1,20 +1,86 @@
-function calc(choice) {
-    let inp1 = +document.getElementById("inp1").value;
-    let inp2 = +document.getElementById("inp2").value;
-    let result;
+let num
+const first = 12.34
 
-    switch(choice) {
-        case '+': result = inp1 + inp2;break;
-        case '-': result = inp1 - inp2;break;
-        case '*': result = inp2 * inp2;break;
-        case '/': {
-            if (inp1 != 0 && inp2 != 0) {
-                result = inp1 / inp2;
-                break;
-            }
-            alert("Вы ввели 0");
-        }
+document.addEventListener("keydown", function (e) {
+  if (e.key == "Tab") {
+    num = document.getElementById("second_num").innerHTML =
+    +generate().toFixed(2)
+  }
+})
+
+document.removeEventListener("keydown", function (e) {
+  if (e.key == "Tab") {
+    num = document.getElementById("second_num").innerHTML =
+    +generate().toFixed(2)
+  }
+});
+
+function show_num() {
+
+  document.getElementById("first_num").innerHTML = +first;
+
+
+}
+
+function generate() {
+  return Math.random() * (100 - -100) + -100;
+}
+
+function calc2(choice) {
+  let result2
+  
+  num = document.getElementById("second_num").innerHTML =
+  +generate().toFixed(2)
+
+  
+  switch (choice) {
+    case "+": {
+        console.log(typeof(+result2))
+        console.log(first)
+        console.log(num)
+        console.log(typeof(first))
+        console.log(typeof(num))
+        result2 = +first + +num
+        console.log(`Результат суммы ${result2}`);
+        document.getElementById("res").innerText = Number(result2.toFixed(2));
+        document.getElementById("choice").innerHTML = String(choice);
+        break;
     }
-    document.getElementById("res").innerText = Number(result);
-    document.getElementById("choice").innerHTML = String(choice);
+    case "-": {
+        console.log(typeof(+result2))
+        console.log(first)
+        console.log(num)
+        console.log(typeof(first))
+        console.log(typeof(num))
+        result2 = +first - +num
+        console.log(`Результат разности ${result2}`);
+        document.getElementById("res").innerText = Number(result2.toFixed(2));
+        document.getElementById("choice").innerHTML = String(choice);
+        break;
+    }
+    case "*": {
+        console.log(typeof(+result2))
+        console.log(first)
+        console.log(num)
+        console.log(typeof(first))
+        console.log(typeof(num))
+        result2 = +first * +num
+        console.log(`Результат умножения ${result2}`);
+        document.getElementById("res").innerText = Number(result2.toFixed(2));
+        document.getElementById("choice").innerHTML = String(choice);
+        break;
+    }
+    case "/": {
+        console.log(typeof(+result2))
+        console.log(first)
+        console.log(num)
+        console.log(typeof(first))
+        console.log(typeof(num))
+        result2 = +first / +num
+        console.log(`Результат деления ${result2}`);
+        document.getElementById("res").innerText = Number(result2.toFixed(2));
+        document.getElementById("choice").innerHTML = String(choice);
+        break;
+    }
+  }
 }

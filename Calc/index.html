@@ -1,29 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Калькулятор</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="main.js"></script>
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <script src="calculate.js"></script>
+  </head>
+  <body>
     <div class="app">
-        <input type="number" min="0" id="inp1" placeholder="Введите 1 число">
-        <input type="number" min="0" id="inp2" placeholder="Введите 2 число">
+      <input type="button" value="Ввести первое число" class="inp1" onclick="addFirstInput()"/>
+      <input type="button" value="Ввести второе число" class="inp2" onclick="addSecondInput()"/>
     </div>
-    <div class="btn">
-        <button onclick="calc('+')">Плюс</button>
-        <button onclick="calc('-')">Минус</button>
-        <button onclick="calc('*')">Умножить</button>
-        <button onclick="calc('/')">Делить</button>
+
+    <div class="inp">
+      <div id="input0"></div>
+      <div id="inputt0"></div>
     </div>
-    <div class="answer">
-        <p>Результат - <div id="res"> </div></p>
-    </div>
-    <div class="answer">
-        <p>Выбрано действие - <div id="choice"> </div></p>
-    </div>
-</body>
+
+  </body>
 </html>
