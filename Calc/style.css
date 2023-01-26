@@ -3,41 +3,80 @@
     padding: 0;
 }
 
-.app {
+.main {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.app > input {
+.main #res1 {
     display: flex;
-    margin-left: 50px;
+    padding-left: 10px;
 }
 
-.app .inp1 {
-    display: flex;
-    margin-top: 50px;
+.main > button {
+    margin-right: 20px;
 }
 
-.app .inp2 {
-    display: flex;
-    margin-top: 50px;
-}
-
-.inp {
+.main2 {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 20px;
 }
 
-.inp > #input0 {
+.main2 #res2 {
     display: flex;
-    padding-top: 20px;
-    margin-left: 50px;
+    padding-left: 10px;
 }
 
-.inp > #inputt0 {
+.main2 > button {
+    margin-right: 20px;
+}
+
+.btn {
     display: flex;
-    padding-top: 20px;
-    margin-left: 50px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.btn > button {
+    margin-left: 20px;
+}
+
+#an1 {
+    display: flex;
+    margin-top: 20px;
+    margin-left: 200px;
+}
+
+#an2 {
+    display: flex;
+    margin-top: 20px;
+    margin-left: 200px;
+}
+
+#result {
+    padding-left: 20px;
+}
+
+#action {
+    padding-left: 20px;
+}
+
+#history {
+    display: flex;
+    margin-top: 100px;
+    margin-left: 200px;
+}
+
+#historyres {
+    margin-top: 10px;
+    margin-left: 200px;
+}
+
+#historyresLocal {
+    margin-top: 10px;
+    margin-left: 200px;
 }

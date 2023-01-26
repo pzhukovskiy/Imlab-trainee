@@ -6,18 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Калькулятор</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="calculate.js"></script>
+    <script src="calculate.js" defer></script>
   </head>
   <body>
-    <div class="app">
-      <input type="button" value="Ввести первое число" class="inp1" onclick="addFirstInput()"/>
-      <input type="button" value="Ввести второе число" class="inp2" onclick="addSecondInput()"/>
-    </div>
 
-    <div class="inp">
-      <div id="input0"></div>
-      <div id="inputt0"></div>
+    <div class="main">
+      <button id="b1">Ввести первое число</button>
+      <p>Первое число - <div id="res1"></div> </p>  
     </div>
-
+    <div class="main2">
+      <button id="b2">Ввести второе число</button>
+      <p>Второе число - <div id="res2"></div> </p>
+    </div>
+    <div class="btn">
+      <button onclick="calc('+')">Плюс</button>
+      <button onclick="calc('-')">Минус</button>
+      <button onclick="calc('*')">Умножить</button>
+      <button onclick="calc('/')">Делить</button>
+      <button id="btnShow">Записать результат</button>
+      <button id="clearShow">Очистить историю</button>
+    </div>
+    <div id="an1">
+      <p>Результат - <div id="result"> </div></p>
+    </div>
+    <div id="an2">
+      <p>Выбрано действие - <div id="action"> </div></p>
+    </div>
+    <div id="history">
+      <h4>История:</h4>
+    </div>
+    <div id="historyres">
+    </div>
+    <div id="history">
+      <h4>Локальная история:</h4>
+    </div>
+    <div id="historyresLocal">
+    </div>
   </body>
 </html>
