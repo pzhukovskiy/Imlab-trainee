@@ -1,0 +1,112 @@
+.container {
+  display: grid;
+  /* gap: 10px 5px; между строками - 10, между колонкам - 5px*/
+  gap: 5px;
+  grid-template-columns: repeat(2, 1fr); /* ШАБЛОН */
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.box {
+  display: grid;
+  border: 1px solid black;
+}
+
+.child_1 {
+  justify-items: center;
+}
+
+.child_1 > button {
+  height: 30px;
+}
+
+.child_2 {
+  justify-items: center;
+}
+
+.child_2 > button {
+  height: 30px;
+}
+
+.child_3 {
+  grid-area: 1/ 2/ 5/ 4; /* row-start, column-start, row-end, column-end */
+}
+
+.child_3 #name {
+  display: flex;
+  justify-content: center;
+  height: 30px;
+}
+
+.child_4 {
+  grid-area: 3/1/6/2;
+}
+
+.child_4 #name {
+  display: flex;
+  justify-content: center;
+}
+
+.child_4 > p {
+  margin-top: 0px;
+  margin-left: 20px;
+}
+
+.child_4 #num {
+  display: flex;
+}
+
+.child_4 > button {
+  align-self: center;
+  width: 100px;
+  margin-left: 20px;
+  border-radius: 10px;
+  border: none;
+}
+
+.child_4 > button:hover {
+  background-color: darkgray;
+}
+
+#btnShow {
+  color: white;
+  background-color: brown;
+}
+
+#btnShow:hover {
+  color: white;
+  background-color: rgb(132, 30, 30);
+}
+
+.child_5 {
+  justify-items: center;
+  grid-area: 5/2/6/4;
+}
+
+.child_5 > button {
+  height: 30px;
+}
+
+/* 
+    gap - отступы между колонками
+    columns - в колонку
+    row - в ряд
+    auto - полное заполнение свободного места на странице
+*/
+
+/*
+значения в пикселях будут точными. 
+Ключевое слово auto означает заполнение элементом всего 
+доступного пространства
+использование единицы fr (фракция) в repeat() означает, 
+что все контейнеры будут иметь одинаковую ширину
+
+
+grid-template-columns: auto 25% 25%; задаем размеры каждого блока
+
+fr - фракция
+1fr - 1/3 части контейнера, т.е 33%
+
+
+justify-self - выравнивает по оси x
+align-self - по оси y
+*/

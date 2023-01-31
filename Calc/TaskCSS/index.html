@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор 2.0</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="calculator.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <div class="box child_1">
+        Введите 1-ое число
+        <button id="button1">Ввести 1-ое число</button>
+    </div>
+    <div class="box child_2">
+        Введите 2-ое число
+        <button id="button2">Ввести 1-ое число</button>
+    </div>
+    <div class="box child_3">
+        <p id="name">История:</p>
+        <span id="historyres"></span>
+    </div>
+    <div class="box child_4">
+        <p id="name">Калькулятор</p>
+        <p>Первое число - <span id="num1"></span></p>
+        <p>Второе число - <span id="num2"></span></p>
+        <p>Выбрано действие - <span id="action"></span></p>
+        <p>Результат - <span id="result"></span></p>
+        <button onclick="calc('+')">Сложение</button>
+        <button onclick="calc('-')">Вычитание</button>
+        <button onclick="calc('*')">Умножение</button>
+        <button onclick="calc('/')">Деление</button>
+        <button id="btnShow">Записать результат</button>
+    </div>
+    <div class="box child_5">
+        Кнопка очистки
+        <button id="clearShow">Очистить историю</button>
+    </div>
+</div>
+</body>
+</html>
+<!-- Добавить иконки вместо текста можно просто фото, можно с сайта -->
+<!-- https://mui.com/material-ui/icons/ -->
+<!-- Сделать адекватные отступы внутри -->
