@@ -253,6 +253,20 @@ function createDiv(value, action) {
     btnClear.addEventListener('click', () => clearHistory());
 }
 
+/* 
+case "NumpadDecimal": {
+    if(action){
+        if (num1.indexOf('.') === -1) {
+                setNum1(num1 + e.key);
+        }
+    }else {
+    if (num2.indexOf('.') === -1) {
+        setNum2(num2 + e.key);
+        }
+    }
+}
+*/
+
 //local storage
 //добавить очистку истории
 
